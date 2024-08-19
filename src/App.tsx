@@ -1,13 +1,34 @@
+import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import './App.css';
-import { Button } from "flowbite-react";
+import HomePage from "./pages/HomePage";
+import PokemonListPage from "./pages/pokemon/PokemonListPage.tsx";
+import RootLayout from "./pages/Root.tsx";
+
+const router = createBrowserRouter(
+    [
+        {
+            path: "/",
+            element: <RootLayout/>,
+            children: [
+                {
+                    path: "/",
+                    element: <HomePage/>
+                },
+                {
+                    path: "/pokemon",
+                    element: <PokemonListPage/>
+                }
+            ]
+        }
+    ]
+);
 
 function App() {
-  return (
-    <>
-      <h1>Let's begin</h1>
-        <Button>Click me</Button>
-    </>
-  )
+    return (
+        <>
+            <RouterProvider router={router}/>
+        </>
+    )
 }
 
 export default App
