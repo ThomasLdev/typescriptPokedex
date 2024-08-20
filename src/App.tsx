@@ -1,8 +1,8 @@
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
-import './App.css';
-import HomePage from "./pages/HomePage";
-import PokemonListPage from "./pages/pokemon/PokemonListPage.tsx";
-import RootLayout from "./pages/Root.tsx";
+import 'src/App.css';
+import HomePage from "src/pages/HomePage";
+import PokemonListPage from "src/pages/pokemon/PokemonListPage.tsx";
+import RootLayout from "src/pages/Root.tsx";
 
 const router = createBrowserRouter(
     [
