@@ -1,5 +1,5 @@
 import React from 'react';
-import PokemonGrid from "src/components/pokemon/PokemonGrid.tsx";
+import PokemonGrid from "@/components/pokemon/PokemonGrid.tsx";
 
 const PokemonListPage: React.FC = () => {
     return (

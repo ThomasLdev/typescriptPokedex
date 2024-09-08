@@ -1,6 +1,6 @@
 import React from 'react';
 import {Outlet} from 'react-router-dom';
-import Navbar from "src/components/navigation/Navbar.tsx";
+import Navbar from "@/components/navigation/Navbar.tsx";
 
 const RootLayout: React.FC = () => {
     return (
